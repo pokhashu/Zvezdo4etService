@@ -1,0 +1,22 @@
+RewriteEngine On
+ErrorDocument 404 /404.html
+
+RewriteRule ^form$ form.php [L]
+RewriteRule ^cabinet$ cabinet.php [L]
+RewriteRule ^auth$ auth.php [L]
+RewriteRule ^admin$ admin.php [L]
+RewriteRule ^developer$ developer.php [L]
+RewriteRule ^scoring$ scoring.php [L]
+RewriteRule ^registration$ registration.php [L]
+RewriteRule ^scene$ scene.php [L]
+RewriteRule ^referee$ referee.php [L]
+RewriteRule ^diploma$ diploma.php [L]
+RewriteRule ^special$ special.php [L]
+RewriteRule ^participant_scores$ participant_scores.php [L]
+RewriteRule ^thnxtoteacher/(.+)$ thnxtoteacher.php?uid=$1 [L]
+RewriteRule ^CProgram$ CProgram.php [L]
+RewriteRule ^LC LC.php [L]
+RewriteRule ^c/(.+)$ cabinet.php?slug=$1 [L]
+RewriteRule ^u/(.+)$ shortenurl.php?slug=$1 [L]
+
+
