@@ -494,7 +494,7 @@ switch ($_POST["formName"]) {
         $chat_id = $_POST['chat_id'];
         $text = $_POST['text'];
 
-        $botApiToken = '5556454745:AAEB0e1zDDjO7wQU2lTzR7edYV2oou5T21Y';
+        $botApiToken = '';
         $channelId ='your channel id';
         $query = http_build_query([
             'chat_id' => $chat_id,
@@ -521,7 +521,7 @@ switch ($_POST["formName"]) {
         } else {
             $chat_id = "279714843";
         }
-        $url = "https://api.telegram.org/bot5556454745:AAEB0e1zDDjO7wQU2lTzR7edYV2oou5T21Y/sendMessage";
+        $url = "https://api.telegram.org/apiToken/sendMessage";
         if(key_exists("message", $_POST)){
             $message = $_POST['message'];
         } else {
